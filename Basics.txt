@@ -1,0 +1,7 @@
+### What is Helm??
+
+Helm is a package manager for Kubernetes which allows you to install Kubernetes controllers.
+
+It also allows you to update, uninstall and package application into charts for use.
+
+### Why Helm?
