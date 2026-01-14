@@ -1,3 +1,8 @@
+https://helm.sh/
+
+https://github.com/helm/helm
+
+
 # What is Helm??
 
 Helm is a package manager for Kubernetes which allows you to install Kubernetes controllers.
