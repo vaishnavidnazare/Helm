@@ -1,7 +1,29 @@
-### What is Helm??
+# What is Helm??
 
 Helm is a package manager for Kubernetes which allows you to install Kubernetes controllers.
-
 It also allows you to update, uninstall and package application into charts for use.
 
-### Why Helm?
+# Why Helm?
+
+Makes managing packages easier without need to writing scripts to install number of packages.
+
+# Install Helm
+
+Using helm documentation, install helm.
+For v3 of k8s onwards we do not require to install anything on k8s cluster.
+
+Helm connects to the correct cluster using the context set.
+
+
+# Working
+
+We need to first add a repository of the package we want to install and then install the package.
+
+`helm repo add <repo_url>`    for e.g: Bitnami repository has most of the popular charts. 
+
+`helm install <chart_name>`
+
+Helm repo includes chart which is basically the package of your application.
+
+To search for the charts in a repository(bitnami) we can do ,
+`helm search repo bitnami | grep elastic`

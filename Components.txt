@@ -1,0 +1,26 @@
+# Components of helm chart
+
+Repo - consists of different charts stored in this central repository
+
+Chart - Bundled application or manifests.
+
+release - deployed instance of the chart (just a unique name we give to chart while installing, so that if we require same chart for another use later we can give it another name).
+
+
+
+# Intstallation
+
+`helm install <release_name> <chart_name>`
+
+# To update the repo after adding is a best practice
+
+`helm repo update <repo_name>`
+
+# To unistall a chart we need to use the release name we have set
+`helm uninstall <release_name>`
+
+
+
+
+
+

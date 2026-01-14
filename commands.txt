@@ -1,0 +1,57 @@
+
+# helm install my-nginx bitnami/nginx --version 13.0.0
+    my-nginx - is the release name 
+    bitnami-nginx - is the chart name
+    --version - optional if we want to install a specific version.
+
+# helm install my-nginx bitnami/nginx --values custom-values.yaml 
+    --values - optional if we want to use our custom values.yaml file.
+
+# helm create myapp
+    - to create a chart myapp
+
+# helm repo add bitnami https://charts.bitnami.com/bitnami
+    - to add the bitnami repository
+
+# helm repo list
+    - to list all the Repositories
+
+# helm repo update
+    - to update the repo
+
+# helm list
+    - to list all the releases
+
+# helm upgrade myapp ./myapp
+    - to upgrade release myapp
+
+# helm rollback myapp 1 
+    - to rollback release myapp to revision 1
+
+# helm hisory myapp
+    - to check revisions of release myapp
+
+# helm uninstall myapp
+    - to delete release myapp
+
+# helm show values bitnami/nginx
+    - to show values of the chart
+
+# helm template my-nginx bitnami/nginx
+    - to preview the manifests
+
+# helm upgrade my-nginx bitnami/nginx --set service.type=NodePort
+    - --set - used to set a value of particular variable.
+
+# helm status my-nginx
+    - to check upgrade status
+
+# helm package <chart_name>
+    - to bundle the chart
+
+# helm repo index .
+    - to initiate the helm repo
+
+# helm search repo myrepo
+    - to get all the charts in the repo.
+
