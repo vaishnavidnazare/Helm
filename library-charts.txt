@@ -1,0 +1,7 @@
+Library charts are DRY chart structures , that can be used to create many other charts.
+
+refer the following link for detailed explaination on how to create this library charts and how to use them .
+
+https://helm.sh/docs/topics/library_charts
+
+this charts are not installable.They can be just referred and use.

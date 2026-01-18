@@ -1,0 +1,30 @@
+Helm hooks in simple words are a mechanism to perform prerequisites or post tasks.
+
+There are different types of hooks which can be used like dependencies.
+
+for eg.
+    - pre-install
+    - post-install
+    - pre-delete
+    - post-delete
+    - pre-upgrade
+    - post-upgrade
+    - pre-rollback
+    - post-rollback
+    - test
+
+
+There can be different types of resources declared in a hook , this resources are not part of the chart release.
+
+This resources are not deleted using helm uninstall, a specific annotation needs to be added to the hook template file.
+
+Hooks are just Kubernetes manifest files with special annotations in the metadata section
+
+It is possible to define a weight for a hook which will help build a deterministic executing order. This weights are also added using annotation.
+
+
+Following are different deletion policies that can be applied in the annotation
+
+before-hook-creation - Delete the previous resource before a new hook is launched (default)
+hook-succeeded - Delete the resource after the hook is successfully executed
+hook-failed - Delete the resource if the hook failed during execution

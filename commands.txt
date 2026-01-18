@@ -35,7 +35,10 @@
     - to delete release myapp
 
 # helm show values bitnami/nginx
-    - to show values of the chart
+    - to show values of the chart that can be configured
+
+# helm get values <chart_name>
+    - tells what values are actually set to the installed chart.
 
 # helm template my-nginx bitnami/nginx
     - to preview the manifests
@@ -54,4 +57,15 @@
 
 # helm search repo myrepo
     - to get all the charts in the repo.
+
+# helm search hub
+    - lists all the charts in the artifacthub.
+
+# helm lint
+    - to validate the helm chart
+
+# helm test <chart_name>
+    - when we install a chart , there is a tests/ directory generated which has the test defined in it. this are used to test the helm-chart when we run this command.
+    - a test is a helm hook.
+    - Often the contents in the tests/ directory does not need to be packaged and published. Consider adding tests/ to the .helmignore file.
 
